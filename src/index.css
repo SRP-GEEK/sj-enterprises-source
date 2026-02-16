@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-text-dark bg-neutral-light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-10 py-4 rounded-xl font-semibold text-base transition-all duration-300 inline-block border-2 border-transparent tracking-wide cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-orange to-accent-gold text-white shadow-md;
+  }
+  
+  .btn-primary:hover {
+    @apply -translate-y-1 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-white border-2 border-white;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-white text-primary-dark;
+  }
+  
+  .section-title {
+    @apply font-heading text-4xl text-primary-dark mb-4 font-bold tracking-tight relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-[-8px] left-0 w-[60px] h-1 bg-gradient-to-r from-accent-orange to-accent-gold rounded;
+  }
+  
+  .card {
+      @apply bg-white border border-gray-200 rounded-2xl p-6 transition-all duration-300 shadow-sm;
+    }
+  
+  .card:hover {
+    @apply -translate-y-2 shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-orange to-accent-gold bg-clip-text text-transparent;
+  }
+}
