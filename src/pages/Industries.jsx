@@ -12,7 +12,7 @@ const Industries = () => {
       </section>
       
       <main className="max-w-[1400px] mx-auto px-12 py-16">
-        <h2 className="section-title">Industries Page Coming Soon</h2>
+        <h2 className="section-title">Industries Page now arrived</h2>
       </main>
     </div>
   );
